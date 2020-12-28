@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace StudentList
+namespace ZametkiList
 {
     public class Startup
     {
@@ -49,7 +49,7 @@ namespace StudentList
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapGet("/last-id", async ctx => ctx.Response.Redirect("/students/last-id"));
+                endpoints.MapGet("/last-id", async ctx => ctx.Response.Redirect("/Zametki/last-id"));
             });
         }
     }
